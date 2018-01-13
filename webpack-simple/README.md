@@ -1,6 +1,6 @@
 # webpack-simple
 
-> A Vue.js project
+https://qiita.com/567000/items/dde495d6a8ad1c25fa43
 
 ## Build Setup
 

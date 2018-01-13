@@ -9,6 +9,7 @@
     </p>
     <input type="text" v-model="msg">
     <button @click="clear()">clear</button>
+    <button @click="ajax()">ajax</button>
   </div>
 </template>
 
@@ -27,6 +28,13 @@
     methods: {
       clear () {
         this.msg = ''
+      },
+      ajax () {
+        var that = this
+        $.getJSON('http://www.geonames.org/postalCodeLookupJSON?postalcode=10504&country=US&callback=?', {}, function (json) {
+          console.log(json)
+          that.msg = json.postalcodes[0].adminName1
+        })
       }
     }
   }

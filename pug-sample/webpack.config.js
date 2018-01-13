@@ -20,9 +20,8 @@ module.exports = {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
-          loaders: {
-          }
           // other vue-loader options go here
+          postcss: [require('postcss-custom-properties')()]
         }
       },
       {

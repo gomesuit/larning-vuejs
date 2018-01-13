@@ -36,6 +36,10 @@ export default {
 </script>
 
 <style>
+:root {
+  --modify-color: red
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -60,6 +64,6 @@ li {
 }
 
 a {
-  color: #42b983;
+  color: var(--modify-color);
 }
 </style>

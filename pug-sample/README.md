@@ -1,6 +1,6 @@
 # pug-sample
 
-> A Vue.js project
+https://qiita.com/shuuhei/items/4852210d362d2e9022d7
 
 ## Build Setup
 
